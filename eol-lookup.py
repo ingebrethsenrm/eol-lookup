@@ -32,7 +32,7 @@ def get_eol_date(product_id, data_file=csv_data_file):
     with open(data_file_path, 'r') as file:
         reader = csv.reader(file)
         for row in reader:
-            if row[0] == product_id:
+            if row[0].lower() == product_id.lower(): # Case-insensitive comparison
                 return row[1]  # Return YYYYMMDD format
     return None
 

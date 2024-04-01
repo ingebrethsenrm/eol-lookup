@@ -39,3 +39,7 @@ python eol-lookup.py abc1234
 python eol-lookup.py abc1234 -f %d-%m-%Y -i 
 # Output: abc1234: 30-05-2020
 ```
+
+## Limitations
+* The script will output first hit in case of duplicate product ID's in the CSV.
+* You will need to have a exact match to get the output.
